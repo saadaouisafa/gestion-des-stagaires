@@ -1,0 +1,41 @@
+<div class="container-fluid position-relative p-0">
+    <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+        <a href="acceuil1" class="navbar-brand p-0">
+            <img src="/medianet.png" class="image-custom" alt="Logo de l'entreprise Medianet">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-label="Ouvrir le menu">
+            <span class="fa fa-bars"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="acceuil1" class="nav-item nav-link">Accueil</a>
+                <a href="/aboutus1" class="nav-item nav-link active">À propos</a>
+                <a href="contact1" class="nav-item nav-link">Contact</a>
+                <!-- Bouton de connexion amélioré -->
+                <a href="login" class="btn btn-primary login-btn py-2 px-4 ms-3">Login</a>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<style>
+    .login-btn {
+        background-color: #007bff; /* Couleur du bouton */
+        border: none; /* Enlever la bordure */
+        border-radius: 50px; /* Bouton arrondi */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce */
+        transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Effet de transition */
+    }
+
+    .login-btn:hover {
+        background-color: #0056b3; /* Couleur au survol */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Ombre plus profonde */
+        transform: translateY(-2px); /* Léger effet de soulèvement au survol */
+    }
+
+    .login-btn:active {
+        transform: translateY(0); /* Ramener à la position d'origine lors du clic */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre réduite lors du clic */
+    }
+</style>

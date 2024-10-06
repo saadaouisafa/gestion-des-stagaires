@@ -1,0 +1,142 @@
+<body>
+    <app-navbar></app-navbar>
+
+    <div class="left">
+        <app-menu></app-menu>
+    </div>
+    <div class="right">
+        <div class="internship-form">
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2 >Fiche du stage</h2>
+            <br>
+            <br>
+
+            <br>
+
+
+
+
+            <div class="form-group">
+                <label for="hostInstitution">Institution d'accueil du stagiaire :</label>
+            <br>
+                <input id="hostInstitution" [(ngModel)]="hostInstitution" required readonly>
+            <br>
+
+            </div>
+
+            <div class="form-group">
+                <label for="internName">Nom et prénom du stagiaire :</label>
+            <br>
+
+                <input id="internName" [(ngModel)]="internName" required>
+            <br>
+
+            </div>
+
+            <div class="form-group">
+            
+
+                <label for="specialty">Spécialité :</label>
+            <br>
+
+                <input id="specialty" [(ngModel)]="specialty" required>
+            </div>
+
+            <div class="form-group">
+            
+
+                <label for="professionalSupervisor">Encadreur professionnel :</label>
+            <br>
+
+                <input id="professionalSupervisor" [(ngModel)]="professionalSupervisor" required>
+            <br>
+            <br>
+
+            </div>
+
+            <table class="internship-table">
+                <thead>
+                    <tr>
+                        <th>Période</th>
+                        <th>Service</th>
+                        <th>Objectifs escomptés</th>
+                        <th>Activités</th>
+                        <th>Observations</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let stage of stages; let i = index">
+                        <td>
+                            <span>{{i === 0 ? 'Première' : i === 1 ? 'Deuxième' : 'Troisième'}} étape</span>
+                            <input [(ngModel)]="stage.period" placeholder="du...........au............">
+                        </td>
+                        <td><input [(ngModel)]="stage.service"></td>
+                        <td><input [(ngModel)]="stage.objectives"></td>
+                        <td><input [(ngModel)]="stage.activities"></td>
+                        <td><input [(ngModel)]="stage.observations"></td>
+                    </tr>
+                </tbody>
+            </table>
+      
+            <div class="signatures">
+                <div class="left-signature">
+                    <div class="signature-group">
+                        <label>Signature de l'étudiant :</label><br><br>
+                        <div class="signature-line"></div>
+                        <br>
+                    </div>
+                </div>
+                <div class="right-signatures">
+                    <div class="signature-group">
+                        <label>Signature de l'encadreur professionnel :</label><br><br>
+                        <div class="signature-line"></div>
+                        <br>
+                    </div>
+                    <div class="signature-group">
+                        <label>Signature de l'encadreur pédagogique :</label>
+                        <br><br>
+                        <div class="signature-line"></div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="date-group">
+                <label for="date">Date :</label>
+                <input id="date" [(ngModel)]="date" required>
+            </div>
+
+           <br>
+           <br>
+           <br>
+           <br><br><br>
+    
+        </div>
+        <br><br><br>
+        <table class="internship-table">
+            <thead>
+                <tr>
+                    <th>Date & N° jour</th>
+                    <th>Objectifs</th>
+                    <th>Description des principales activités</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let row of tableRows; let i = index">
+                    <td>J{{ i + 1 }}......../......../.........</td>
+                    <td>
+                        <input [(ngModel)]="row.objectives" placeholder="Objectifs">
+                    </td>
+                    <td>
+                        <input [(ngModel)]="row.activities" placeholder="Activités">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <button (click)="print()" class="print-button">Imprimer la fiche</button>
+    </div>
+</body>

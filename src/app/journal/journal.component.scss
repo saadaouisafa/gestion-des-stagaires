@@ -1,0 +1,149 @@
+.internship-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.internship-table th, .internship-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.internship-table th {
+    background-color: #f2f2f2;
+}
+
+input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    height: 100vh;
+}
+h2{
+    text-align: center;
+    color:#636ddee0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.right {
+    width: 75%;
+    float: right;
+}
+
+.left {
+    width: 25%;
+    float: left;
+}
+
+.internship-form {
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.signatures {
+    margin-top: 20px;
+}
+
+.signature-group {
+    margin-bottom: 10px;
+}
+
+.signature-line {
+    border-bottom: 1px solid #000;
+    width: 200px;
+    margin-top: 20px;
+}
+
+.date-group {
+    margin-top: 20px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px; /* Ajoute des coins arrondis */
+    background: linear-gradient(to right, #636ddee0, #95a7ba);
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajoute une ombre légère */
+    transition: background 0.3s ease, transform 0.2s ease; /* Ajoute une animation fluide pour l'effet hover */
+    float: right;
+}
+
+button:hover {
+    background: linear-gradient(to right, #505edb, #7a8f9f); /* Change légèrement la couleur au survol */
+    transform: translateY(-2px); /* Soulève légèrement le bouton */
+}
+
+button:active {
+    transform: translateY(1px); /* Effet de clic */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Diminue l'ombre au clic */
+}
+
+@media print {
+    .print-button {
+        display: none; // Cacher le bouton d'impression lors de l'impression
+    }
+
+    .right {
+        width: 100%; // Assurer que la partie droite utilise toute la largeur
+    }
+    .left{
+        display: none; 
+    }
+    .evaluation-container {
+        position: absolute; 
+        left: 0;
+        top: 0;
+    }
+
+    .internship-form {
+        // Styles pour formater la fiche lors de l'impression
+        page-break-after: always; // S'assurer que chaque fiche commence sur une nouvelle page
+    }
+}
+.signatures {
+    display: flex;
+    justify-content: space-between; // Espacement entre la signature de l'étudiant et celles des encadrants
+    margin-top: 20px; // Ajouter un espace au-dessus des signatures
+
+    .left-signature {
+        flex: 1; // Occupation d'une part de l'espace à gauche
+    }
+
+    .right-signatures {
+        display: flex;
+        flex-direction: column; // Aligner les signatures des encadrants verticalement
+        flex: 1; // Occupation d'une part de l'espace à droite
+        align-items: flex-end; // Alignement à droite
+    }
+
+    .signature-group {
+        margin-bottom: 10px; // Ajouter de l'espace entre les groupes de signatures
+    }
+
+    .signature-line {
+        border-bottom: 1px solid #000; // Ligne de signature
+        width: 200px; // Largeur de la ligne de signature
+        margin-top: 5px; // Espacement au-dessus de la ligne
+    }
+}
+
+

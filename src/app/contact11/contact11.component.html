@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="contact11.component.scss"> 
+</head>
+<body>
+    <app-nav></app-nav>
+
+    <div class="container-fluid bg-primary py-5 mb-5 hero-header">
+        <div class="container py-5">
+            <div class="row justify-content-center py-5">
+                <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
+                    <h1 class="display-3 text-white animated slideInDown">Contactez-nous</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a href="#">Accueil</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">contact</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-xxl py-5">
+        <div class="container">
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    
+                    <p class="mb-4">Nous serions ravis d'échanger avec vous ! N'hésitez pas à nous faire part de vos idées ou questions. Ensemble, construisons l'avenir.</p>
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary" style="width: 50px; height: 50px;">
+                            <i class="fa fa-map-marker-alt text-white"></i>
+                        </div>
+                        <div class="ms-3">
+                            <h5 class="text-primary">start up</h5>
+                            <p class="mb-0">Immeuble Essadi Tour C-D Mezzanine, 10 Av. Habib Bourguiba, Décembre</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary" style="width: 50px; height: 50px;">
+                            <i class="fa fa-phone-alt text-white"></i>
+                        </div>
+                        <div class="ms-3">
+                            <h5 class="text-primary">téléphone</h5>
+                            <p class="mb-0">71827484</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary" style="width: 50px; height: 50px;">
+                            <i class="fa fa-envelope-open text-white"></i>
+                        </div>
+                        <div class="ms-3">
+                            <h5 class="text-primary">Information</h5>
+                            <p class="mb-0">info_medianet.com.tn</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <iframe class="position-relative rounded w-100 h-100"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11258.686441495724!2d10.18069004367985!3d36.846610883973554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd334e6533ad1f%3A0x41e585853b506a78!2sMEDIANET!5e0!3m2!1sfr!2stn!4v1727368515642!5m2!1sfr!2stn"
+                        frameborder="0" style="min-height: 300px; border:0;" allowfullscreen="" aria-hidden="false"
+                        tabindex="0"></iframe>
+                </div>
+                <div class="col-lg-4 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
+                   
+    <div class="form-body"> 
+        <div class="form-holder">
+            <div class="form-content">
+                <div class="form-items">
+                    <h3>Contactez-nous</h3>
+                    <p>Disponible pour vous écouter</p>
+                    <form class="requires-validation" novalidate>
+                        <div class="col-md-12">
+                            <input class="form-control" type="text" name="nomPrenom" placeholder="Nom et prénom" required>
+                            <div class="valid-feedback">Champ valide !</div>
+                            <div class="invalid-feedback">Ce champ ne peut pas être vide !</div>
+                        </div>
+                        <div class="col-md-12">
+                            <input class="form-control" type="text" name="entreprise" placeholder="Entreprise ou particulier" required>
+                            <div class="valid-feedback">Champ valide !</div>
+                            <div class="invalid-feedback">Ce champ ne peut pas être vide !</div>
+                        </div>
+                        <div class="col-md-12">
+                            <select class="form-control" name="typePack">
+                                <option value="">Type de pack</option>
+                                <option value="pack1">Pack 1</option>
+                                <option value="pack2">Pack 2</option>
+                                <option value="pack3">Pack 3</option>
+                            </select>
+                        </div>
+                        <div class="col-md-12">
+                            <input class="form-control" type="text" name="secteurActivite" placeholder="Secteur d'activité">
+                        </div>
+                        <div class="col-md-12">
+                            <input class="form-control" type="tel" name="telephone" placeholder="Téléphone" required>
+                            <div class="valid-feedback">Champ valide !</div>
+                            <div class="invalid-feedback">Ce champ ne peut pas être vide !</div>
+                        </div>
+                        <div class="col-md-12">
+                            <input class="form-control" type="email" name="email" placeholder="E-mail" required>
+                            <div class="valid-feedback">Champ valide !</div>
+                            <div class="invalid-feedback">Ce champ ne peut pas être vide !</div>
+                        </div>
+                        <div class="col-md-12">
+                            <input class="form-control" type="text" name="sujet" placeholder="Sujet" required>
+                            <div class="valid-feedback">Champ valide !</div>
+                            <div class="invalid-feedback">Ce champ ne peut pas être vide !</div>
+                        </div>
+                        <div class="col-md-12">
+                            <textarea class="form-control" name="message" placeholder="Message" rows="4"></textarea>
+                        </div>
+                        <div class="form-button mt-3">
+                            <button id="submit" type="submit" class="btn btn-primary">Envoyer</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+
+    <app-footer></app-footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+</body>
+</html>

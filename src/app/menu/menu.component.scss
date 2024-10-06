@@ -1,0 +1,44 @@
+
+  .sidebar {
+    position: fixed;
+    top: 56px; /* Ajusté pour éviter l'espace sous la navbar */
+    left: 0;
+    width: 25%; /* 25% pour le menu à gauche */
+    height: calc(100% - 56px); /* Prend tout l'espace restant sous la navbar */
+    background-color: #343a40; /* Couleur de fond de la navbar */
+    color: white; /* Couleur du texte */
+    padding-top: 20px;
+    padding-left: 10px;
+    margin: 0;
+    border-right: 1px solid #e5e5e5; /* Bordure pour séparer visuellement le menu et le contenu */
+    overflow-y: auto; 
+  }
+  
+  .sidebar .nav-link {
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+  }
+  
+  .sidebar .nav-link:hover {
+    background-color: #ddd;
+    color: #000;
+  }
+  
+  /* Contenu principal - 75% de la largeur */
+  .content {
+    margin-left: 25%; /* Le reste pour le contenu */
+    width: 75%; /* 75% de la page */
+    padding: 20px;
+    margin-top: 56px; /* Espace pour que le contenu ne soit pas masqué sous la navbar */
+   color: white;
+  }
+  
+  /* Supprimer les espaces entre la navbar et le menu */
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+  }
+  

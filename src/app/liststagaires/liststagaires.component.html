@@ -1,0 +1,23 @@
+<h2>Stagaire List</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email Id</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFo="let Stagaire of stagaires">
+            <td>{{ Stagaire.firstName }}</td>
+            <td>{{ Stagaire.lastName }}</td>
+            <td>{{ Stagaire.emailId }}</td>
+            <td>
+                <button (click)="updateStagaire(Stagaire.id!)" class="btn btn-info">Update</button>
+                <button (click)="deleteStagiaire(Stagaire.id!)" class="btn btn-danger" style="margin-left: 10px">Delete</button>
+                <button (click)="stagaireDetails(Stagaire.id!)" class="btn btn-info" style="margin-left: 10px">View</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,47 @@
+
+.navbar {
+    position: fixed; /* Reste en haut de la page */
+    top: 0; /* Position en haut de la page */
+    left: 0; /* Aligne à gauche */
+    right: 0; /* Aligne à droite, s'étend sur toute la largeur */
+    height: 56px; /* Hauteur fixe de la navbar */
+    background-color: #343a40; /* Couleur de fond de la navbar */
+    color: white; /* Couleur du texte */
+    padding: 0 20px; /* Espacement interne */
+    display: flex; /* Pour utiliser flexbox pour l'alignement */
+    align-items: center; /* Centrer verticalement les éléments */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre pour un effet de profondeur */
+    z-index: 1000; /* Assure que la navbar soit au-dessus des autres éléments */
+}
+
+
+.navbar a {
+    color: white; /* Couleur des liens */
+    text-decoration: none; /* Supprime le soulignement des liens */
+    margin:0 15px; /* Espace entre les liens */
+    transition: color 0.3s ease; /* Transition pour le changement de couleur */
+    font-size: 20px;
+
+}
+
+.navbar a:hover {
+    color: #f8f9fa; /* Couleur au survol des liens */
+}
+
+.image-custom {
+    width: 90px;  /* Largeur personnalisée */
+    height: 30px; /* Hauteur personnalisée */
+     /* Maintient le contenu tout en coupant les parties non visibles */
+}
+
+
+
+
+
+
+
+
+
+
+
+

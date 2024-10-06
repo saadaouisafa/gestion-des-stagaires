@@ -1,0 +1,62 @@
+.container-fluid {
+    background: linear-gradient(to right, #636ddee0, #95a7ba);
+
+}
+.service-item {
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.section-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+h5 {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+p {
+    color: #7f8c8d;
+    line-height: 1.5;
+}
+.service-item {
+    transition: background-color 0.3s;
+}
+
+.service-item:hover {
+    background-color: #e7f1ff; /* Changez cette couleur selon vos besoins */
+}
+.service-item {
+    height: 300px; /* Ajustez la hauteur selon vos besoins */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Centre le texte */
+    background-color: rgb(241, 235, 226);
+}
+.service-item {
+    height: 100%; /* Assure que toutes les divs prennent la même hauteur */
+}
+
+.service-item .p-4 {
+    display: flex; /* Utilise flexbox pour centrer le contenu */
+    flex-direction: column; /* Colonne pour aligner verticalement */
+    justify-content: center; /* Centre verticalement */
+    height: 100%; /* Remplit la hauteur du conteneur */
+}

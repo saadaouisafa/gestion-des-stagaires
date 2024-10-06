@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+
+body{
+    background-color: rgb(192, 196, 200);
+}
+
+.left {
+    padding: 15px;
+   
+}
+
+.right {
+    padding: 15px;
+    background-color: rgb(192, 196, 200);
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.container-fluid {
+    background: linear-gradient(to right, #636ddee0, #95a7ba); /* Fond du header */
+}
+
+
+.form-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 56px); /* Hauteur minimum de 100% de la vue moins la hauteur de la navbar */
+    width: 100%; /* Prend toute la largeur disponible */
+}
+
+.form-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 600px; /* Limite la largeur maximale du formulaire */
+    margin: auto; /* Centre le formulaire horizontalement */
+    padding: 30px;
+}
+
+.form-content {
+    position: relative;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: #9dd1e7; /* Fond légèrement plus clair pour le contenu du formulaire */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    transition: transform 0.3s ease; /* Effet de transition pour le formulaire */
+}
+
+.form-content:hover {
+    transform: translateY(-5px); /* Effet de levage au survol */
+}
+
+.form-items {
+    text-align: left;
+}
+
+.form-content h3 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 10px; /* Ajustement de l'espacement */
+}
+
+
+
+.form-content p {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.5; /* Espacement des lignes */
+    margin-bottom: 30px;
+}
+
+.form-content label {
+    color: #fff; /* Couleur des labels */
+}
+
+.form-content input[type=text], 
+.form-content input[type=password], 
+.form-content input[type=email], 
+.form-content input[type=file] {
+    width: 100%;
+    padding: 12px 15px; /* Espacement amélioré */
+    border: 1px solid #ddd; /* Bordure pour les champs */
+    border-radius: 6px;
+    background-color: #fff;
+    font-size: 15px;
+    color: #333; /* Couleur du texte */
+    margin-top: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transition pour la bordure et l'ombre */
+}
+
+.form-content input[type=text]:focus, 
+.form-content input[type=password]:focus, 
+.form-content input[type=email]:focus {
+    border-color: #6c757d; /* Couleur de la bordure au focus */
+    box-shadow: 0 0 5px rgba(108, 117, 125, 0.5); /* Ombre au focus */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Couleur du bouton */
+    border: none;
+    color: #fff; /* Couleur du texte */
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease; /* Transition pour le bouton */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Couleur au survol */
+}
+
+.invalid-feedback {
+    color: #ff606e; /* Couleur pour les messages d'erreur */
+}
+
+.valid-feedback {
+    color: #2acc80; /* Couleur pour les messages de validation */
+}
+
+.form-check {
+    margin-top: 20px; /* Espacement supérieur */
+}
+
+.form-check-label {
+    color: #fff; /* Couleur du texte de la case à cocher */
+}
+
+.contact-section {
+    background: linear-gradient(to right, #636ddee0, #95a7ba);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.contact-section h1 {
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.contact-section .breadcrumb {
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.contact-section .breadcrumb-item a {
+    color: #fff;
+}
+
+.contact-section .breadcrumb-item.active {
+    color: #ddd;
+}

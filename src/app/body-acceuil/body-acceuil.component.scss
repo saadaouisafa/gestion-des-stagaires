@@ -1,0 +1,81 @@
+.container-fluid {
+    background: linear-gradient(to right, #636ddee0, #95a7ba);
+
+}
+
+.animated-img {
+    transition: transform 0.3s ease-out; /* Ajoute un effet de transition au zoom */
+}
+
+.animated-img:hover {
+    transform: scale(1.1); /* Zoom de 110% au survol */
+}
+@keyframes swing {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(-40px); }
+    100% { transform: translateX(0); }
+}
+
+.swing-animation {
+    animation: swing 2s ease-in-out infinite;
+}
+@keyframes slide-from-right {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(100%);
+        opacity: 1;
+    }
+}
+
+.slide-in {
+    animation: slide-from-right 10s linear infinite; /* Animation dure 1 seconde */
+}
+.containerimg{
+    background-color: rgb(255, 255, 255);
+    filter: drop-shadow(0px 6px 10px rgb(73, 73, 18));
+
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+    height: 100vh;
+    background-color: #9dbbd5; /* Couleur de fond bleu clair */
+}
+
+.container {
+    margin-top: 30px;
+}
+.left {
+    flex: 0 0 25%; /* 25% pour le côté gauche */
+    background-color: #f0f0f0; /* couleur de fond pour le côté gauche */
+}
+
+.right {
+    flex: 0 0 75%; /* 75% pour le côté droit */
+    background-color: #fff; /* couleur de fond pour le côté droit */
+    padding: 20px; /* ajout de l'espacement */
+}
+
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #5689bf; /* Bordure bleue */
+    border-radius: 5px;
+    background-color: #e6f0ff; /* Couleur de fond des sections */
+}
+
+h2 {
+    color: #007bff; /* Couleur des titres des sections */
+}
+
+p {
+    color: #333; /* Couleur du texte */
+}

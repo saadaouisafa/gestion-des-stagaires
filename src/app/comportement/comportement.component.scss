@@ -1,0 +1,97 @@
+
+body {
+    display: flex;
+    margin: 0;
+    height: 100vh;
+}
+h2{
+    text-align: center;
+    color:#000;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.right {
+    width: 75%;
+    float: right;
+}
+
+.left {
+    width: 25%;
+    float: left;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.signature {
+    margin-top: 30px;
+    text-align: right;
+}
+@media print {
+    /* Cacher le bouton d'impression lors de l'impression */
+    .print-button {
+        display: none;
+    }
+
+    /* Assurer que la partie droite utilise toute la largeur */
+    .right {
+        width: 100%;
+    }
+
+    /* Cacher la partie gauche */
+    .left {
+        display: none;
+    }
+
+    /* Positionner et styliser le conteneur d'évaluation */
+    .evaluation-container {
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 40px 40px 40px 10px; /* Ajouter des unités pour le padding */
+        width: 100%; /* S'assurer que le conteneur utilise toute la largeur */
+    }
+
+    /* Styliser le formulaire de stage pour l'impression */
+    .internship-form {
+        page-break-after: always; /* S'assurer que chaque fiche commence sur une nouvelle page */
+    }
+}
+
+
+button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px; /* Ajoute des coins arrondis */
+    background: linear-gradient(to right, #636ddee0, #95a7ba);
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajoute une ombre légère */
+    transition: background 0.3s ease, transform 0.2s ease; /* Ajoute une animation fluide pour l'effet hover */
+    float: right;
+}
+
+button:hover {
+    background: linear-gradient(to right, #505edb, #7a8f9f); /* Change légèrement la couleur au survol */
+    transform: translateY(-2px); /* Soulève légèrement le bouton */
+}
+
+button:active {
+    transform: translateY(1px); /* Effet de clic */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Diminue l'ombre au clic */
+}

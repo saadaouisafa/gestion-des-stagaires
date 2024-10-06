@@ -1,0 +1,42 @@
+<app-nav></app-nav>
+<body>
+<div class="form-body d-flex justify-content-center align-items-center vh-100" style="background-image: url('chemin-de-ton-image.jpg'); background-size: cover; background-position: center;">
+    <div class="row w-100 justify-content-center">
+        <div class="col-lg-4 col-md-6 col-sm-8">
+            <div class="form-content text-center">
+                <div class="form-items">
+                    <h3 class="mb-4 text-white">Connexion</h3>
+                    <form class="requires-validation" novalidate>
+                        <!-- Champ Email -->
+                        <div class="mb-3">
+                            <input class="form-control rounded-pill py-2 px-3" type="email" name="mail" placeholder="Adresse e-mail" required>
+                            <div class="valid-feedback">L'adresse e-mail est valide.</div>
+                            <div class="invalid-feedback">Veuillez entrer une adresse e-mail valide.</div>
+                        </div>
+                        <!-- Champ Mot de passe -->
+                        <div class="mb-3">
+                            <input class="form-control rounded-pill py-2 px-3" type="password" name="password" placeholder="Mot de passe" required>
+                            <div class="valid-feedback">Le mot de passe est valide.</div>
+                            <div class="invalid-feedback">Veuillez entrer votre mot de passe.</div>
+                        </div>
+                        <!-- Conditions d'utilisation -->
+                        <div class="form-check mb-3 text-start text-white">
+                            <input class="form-check-input" type="checkbox" value="" id="termsCheck" required>
+                            <label class="form-check-label" for="termsCheck">
+                                Je certifie que les informations fournies sont exactes.
+                            </label>
+                            <div class="invalid-feedback">Vous devez confirmer la véracité des informations.</div>
+                        </div>
+                        <!-- Boutons -->
+                        <div class="form-button mt-4 text-center">
+                            <button id="submit" type="submit" class="btn btn-primary rounded-pill py-2 px-4 me-3">Connexion</button>
+                            <a href="signin" class="btn btn-outline-light rounded-pill py-2 px-4">Créer un compte</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<app-footer></app-footer>

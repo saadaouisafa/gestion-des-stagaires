@@ -1,0 +1,58 @@
+/* Container et Navbar */
+.container-fluid {
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Prendre toute la largeur de la fenêtre */
+    background-color: #ffffff;
+    border-bottom: 2px solid #dee2e6;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 999; /* Pour s'assurer que la navbar est au-dessus du contenu */
+}
+
+/* Texte principal (titre et liens) */
+.navbar-brand h1 {
+    color: #000; /* Texte noir */
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.nav-item.nav-link {
+    color: #000; /* Texte noir */
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+.nav-item.nav-link:hover, 
+.nav-item.nav-link.active {
+    color: #007bff; /* Couleur sur survol et lien actif */
+}
+
+/* Bouton d'inscription */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Icône */
+.fa-graduation-cap {
+    color: #007bff;
+}
+
+.image-custom {
+    width: 90px;  /* Largeur personnalisée */
+    height: 30px; /* Hauteur personnalisée */
+    overflow: hidden; /* Maintient le contenu tout en coupant les parties non visibles */
+}

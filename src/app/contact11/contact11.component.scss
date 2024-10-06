@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+
+*, body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: rgb(220, 226, 231) ; /* Couleur de fond sombre */
+    overflow: hidden; /* Empêche le défilement */
+}
+
+.form-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Hauteur minimum de 100% de la vue */
+}
+
+.form-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 30px;
+}
+
+.form-content {
+    position: relative;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: #9dd1e7; /* Fond légèrement plus clair pour le contenu du formulaire */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    transition: transform 0.3s ease; /* Effet de transition pour le formulaire */
+}
+
+.form-content:hover {
+    transform: translateY(-5px); /* Effet de levage au survol */
+}
+
+.form-items {
+    text-align: left;
+}
+
+.form-content h3 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 10px; /* Ajustement de l'espacement */
+}
+.container-fluid {
+    background: linear-gradient(to right, #636ddee0, #95a7ba);
+
+}
+
+.form-content p {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.5; /* Espacement des lignes */
+    margin-bottom: 30px;
+}
+
+.form-content label {
+    color: #fff; /* Couleur des labels */
+}
+
+.form-content input[type=text], 
+.form-content input[type=password], 
+.form-content input[type=email], 
+.form-content input[type=file] {
+    width: 100%;
+    padding: 12px 15px; /* Espacement amélioré */
+    border: 1px solid #ddd; /* Bordure pour les champs */
+    border-radius: 6px;
+    background-color: #fff;
+    font-size: 15px;
+    color: #333; /* Couleur du texte */
+    margin-top: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transition pour la bordure et l'ombre */
+}
+
+.form-content input[type=text]:focus, 
+.form-content input[type=password]:focus, 
+.form-content input[type=email]:focus {
+    border-color: #6c757d; /* Couleur de la bordure au focus */
+    box-shadow: 0 0 5px rgba(108, 117, 125, 0.5); /* Ombre au focus */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Couleur du bouton */
+    border: none;
+    color: #fff; /* Couleur du texte */
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease; /* Transition pour le bouton */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Couleur au survol */
+}
+
+.invalid-feedback {
+    color: #ff606e; /* Couleur pour les messages d'erreur */
+}
+
+.valid-feedback {
+    color: #2acc80; /* Couleur pour les messages de validation */
+}
+
+/* Style pour la case à cocher */
+.form-check {
+    margin-top: 20px; /* Espacement supérieur */
+}
+
+.form-check-label {
+    color: #fff; /* Couleur du texte de la case à cocher */
+}
+.form-body {
+    width: 100%; /* Prend toute la largeur disponible */
+}
+
+.form-holder {
+    max-width: 600px; /* Limite la largeur maximale du formulaire */
+    margin: auto; /* Centre le formulaire horizontalement */
+}
+
+.form-content {
+    padding: 20px; /* Ajoute du rembourrage autour du formulaire */
+    border-radius: 8px; /* Arrondit les coins du formulaire */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ajoute une ombre pour un effet de profondeur */
+}

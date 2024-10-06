@@ -1,0 +1,124 @@
+/* Container et Navbar */
+
+.container-fluid {
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 2px solid #dee2e6;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Texte principal (titre et liens) */
+.navbar-brand h1 {
+    color: #000; /* Texte noir */
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.nav-item.nav-link {
+    color: #000; /* Texte noir */
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+.nav-item.nav-link:hover, 
+.nav-item.nav-link.active {
+    color: #007bff; /* Couleur sur survol et lien actif */
+}
+
+/* Bouton d'inscription */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Icône */
+.fa-graduation-cap {
+    color: #007bff;
+}
+
+/* Pied de page */
+.footer {
+    background: linear-gradient(to right, #636ddee0, #95a7ba);
+/* Couleur primaire */
+    color: #ffffff; /* Texte blanc */
+}
+
+.footer p {
+    margin-bottom: 0.5rem; /* Espace entre les paragraphes */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Espace entre les icônes */
+}
+
+.social-icons img {
+    max-width: 40px; /* Largeur maximale des icônes */
+    transition: transform 0.3s, opacity 0.3s; /* Animation sur le survol */
+}
+
+.social-icons img:hover {
+    transform: scale(1.1); /* Légère animation au survol */
+    opacity: 0.8; /* Opacité réduite au survol */
+}
+
+.footer-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem; /* Espacement entre les informations */
+}
+
+.footer-info_icon {
+    font-size: 1.5rem; /* Taille de l'icône */
+    margin-right: 10px; /* Espace entre l'icône et le texte */
+    color: #007bff; /* Couleur des icônes */
+}
+
+.contact {
+    font-size: 1.25rem; /* Taille de la police du titre de contact */
+    border-bottom: 2px solid #fff; /* Ligne sous le titre */
+    padding-bottom: 5px; /* Espace sous le titre */
+}
+
+.footer-text {
+    font-size: 0.9rem; /* Taille du texte d'information */
+}
+
+/* Ajout d'une animation au survol des icônes */
+.footer-social a {
+    display: inline-block; /* Pour que le padding fonctionne */
+    padding: 10px;
+    transition: background-color 0.3s; /* Animation de couleur de fond */
+}
+
+.footer-social a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Effet de survol */
+}
+
+/* Styles pour le pied de page */
+.footer-bottom {
+    background-color: #0056b3; /* Couleur d'arrière-plan pour la partie inférieure */
+    padding: 20px 0;
+}
+
+.footer-bottom p {
+    margin: 0; /* Pas d'espace autour des paragraphes */
+    font-size: 0.875rem; /* Taille de la police */
+}
+.image-custom {
+    width: 30px;  /* Largeur personnalisée */
+    height: 20px; /* Hauteur personnalisée */
+    object-fit: cover; /* Maintient le contenu tout en coupant les parties non visibles */
+}

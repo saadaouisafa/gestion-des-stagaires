@@ -1,0 +1,84 @@
+.container-fluid {
+    background: linear-gradient(to right, #636ddee0, #95a7ba);
+
+}
+
+.btn-square {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    transition: all 0.3s ease; /* Ajout de l'effet de transition */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-square:hover {
+    background-color: #636ddee0; /* Change la couleur de fond au survol */
+    transform: scale(1.1);  /* Augmente légèrement la taille de l'icône */
+}
+
+.btn-square i {
+    color: #290db6;
+    transition: color 0.3s ease; /* Transition de la couleur de l'icône */
+}
+
+.btn-square:hover i {
+    color: #fff; /* Change la couleur de l'icône au survol */
+}
+.team-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain; /* Change cover to contain to avoid cropping */
+    border-radius: 0;
+    display: block;
+    margin: 0 auto;
+    background-color:  rgb(192, 196, 200); /* Ajoute un fond au cas où l'image ne remplit pas l'espace */
+}
+
+html,body{
+    background-color: rgb(192, 196, 200);
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title span {
+    color: #007BFF; /* Couleur bleue pour le texte "Travel Guide" */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.section-title h2 {
+    color: #2c3e50; /* Couleur du titre principal, par exemple bleu foncé */
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.section-title .title-decoration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.section-title .title-decoration::before,
+.section-title .title-decoration::after {
+    content: "";
+    width: 50px;
+    height: 2px;
+    background-color: #007BFF; /* Couleur bleue pour les lignes */
+    margin: 0 10px;
+}
+
+.section-title .title-decoration .title-separator {
+    background-color: #007BFF; /* La barre centrale bleue */
+    width: 10px;
+    height: 2px;
+}
